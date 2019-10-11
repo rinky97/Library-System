@@ -13,13 +13,11 @@ public class User extends Person {
 		
 	}
 	public User() {
-		// TODO Auto-generated constructor stub
 	}
 	
 	public void login() {
 		DBconnection.session = 0;
 		System.out.print("Enter your username");
-		//Scanner sc = new Scanner(System.in);
 	     uName = sc.nextLine();
 		System.out.print("Enter your password");
 		 uPass = sc.nextLine();
@@ -34,11 +32,8 @@ public class User extends Person {
 			}
 		
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		
 	}
 	
 	@Override
